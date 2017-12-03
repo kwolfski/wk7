@@ -39,8 +39,13 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     ConsoleDisplay.innerHTML += 'This speech took place during the common era.';
   }
 
+    
+    
   var oldest = speechesArray[0].year,
       newest = speechesArray[0].year;
+    
+    
+    
 
   for(var i = 0; i < speechesArray.length; i++){
     if(speechesArray[i].year < oldest){
@@ -50,14 +55,19 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
       newest = speechesArray[i].year;
     }
   }
+    
+    
+    //Step 3
 
   if(speechesArray[0].year === oldest){
-    console.log('This is the oldest speech on the page.');
+    document.getElementById(ConsoleDisplay).innerHTML += 'This is the oldest speech on the page.';
   }
   if(speechesArray[0].year === newest){
-    console.log('This is the most recent speech on the page.');
+    document.getElementById(ConsoleDisplay).innerHTML += 'This is the most recent speech on the page.';
   }
 });
+
+
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Ghandi" button.
