@@ -24,15 +24,19 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
 });
 
+
+    //Step 1
+
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
-    ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year +".";
+    ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year +".<br>";
     
+    //Step2
 
   if(speechesArray[0].yearIsBCE === true){
-    console.log('This speech took place before the common era.');
+    ConsoleDisplay.innerHTML += 'This speech took place before the common era.';
   }else{
-    console.log('This speech took place during the common era.');
+    ConsoleDisplay.innerHTML += 'This speech took place during the common era.';
   }
 
   var oldest = speechesArray[0].year,
