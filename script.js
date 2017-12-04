@@ -1,3 +1,5 @@
+//I followed along with the video that was posted week 8
+
 //For readability and clarity it is good practice to declare variables at the beginning of the JS document if possible
 var churchillSpeech = {
       'author': 'Churchill',
