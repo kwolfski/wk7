@@ -34,16 +34,14 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     //Step2
 
   if(speechesArray[0].yearIsBCE === true){
-    ConsoleDisplay.innerHTML += 'This speech took place before the common era.';
+    ConsoleDisplay.innerHTML += 'This speech took place before the common era. <br>';
   }else{
-    ConsoleDisplay.innerHTML += 'This speech took place during the common era.';
+    ConsoleDisplay.innerHTML += 'This speech took place during the common era.<br>';
   }
 
     
-    
   var oldest = speechesArray[0].year,
       newest = speechesArray[0].year;
-    
     
     
 
@@ -56,14 +54,13 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     }
   }
     
-    
-    //Step 3
+    //Step 3 - cannot get to fire... 
 
   if(speechesArray[0].year === oldest){
-    document.getElementById(ConsoleDisplay).innerHTML += 'This is the oldest speech on the page.';
+    ConsoleDisplay.innerHTML += 'This is the oldest speech on the page. <br>';
   }
   if(speechesArray[0].year === newest){
-    document.getElementById(ConsoleDisplay).innerHTML += 'This is the most recent speech on the page.';
+    ConsoleDisplay.innerHTML += 'This is the most recent speech on the page. <br>';
   }
 });
 
