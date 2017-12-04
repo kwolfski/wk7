@@ -39,8 +39,8 @@ donatePrompt = window.prompt('How much would you like to donate?');
         else{
         donationText = document.createTextNode('Thank you for your donation of $' + donatePrompt );
         }
-
-
+donationDisplay.appendChild(donationText);
+document.getElementById('SideNav').appendChild(donationDisplay);
 });
 
 
