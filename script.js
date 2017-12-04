@@ -38,8 +38,9 @@ donatePrompt = window.prompt('How much would you like to donate?');
         donationDisplay.setAttribute('style', 'color: #DB152C');
             
         articleElements = document.getElementsByTagName('article');
-        console.log(articleElements.length);
-            
+        for(var i = 0; i < articleElements.length; i++){
+            articleElements[i].className = 'generous-donation';
+        }
         }
         else{
         donationText = document.createTextNode('Thank you for your donation of $' + donatePrompt );
