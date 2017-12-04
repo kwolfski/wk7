@@ -68,12 +68,12 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
 
 document.getElementById('BtnGhandi').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Ghandi" button.
-  console.log('This speech was written by ' + speechesArray[1].author + ' in ' + speechesArray[1].year);
+    ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[1].author + ' in ' + speechesArray[1].year +".<br>";
 
   if(speechesArray[1].yearIsBCE === true){
-    console.log('This speech took place before the common era.');
+    ConsoleDisplay.innerHTML += 'This speech took place before the common era. <br>';
   }else{
-    console.log('This speech took place during the common era.');
+    ConsoleDisplay.innerHTML += 'This speech took place during the common era.<br>';
   }
 
   var oldest = speechesArray[0].year,
@@ -89,21 +89,21 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
   }
 
   if(speechesArray[1].year === oldest){
-    console.log('This is the oldest speech on the page.');
+    ConsoleDisplay.innerHTML += 'This is the oldest speech on the page. <br>';
   }
   if(speechesArray[1].year === newest){
-    console.log('This is the most recent speech on the page.');
+    ConsoleDisplay.innerHTML += 'This is the most recent speech on the page. <br>';
   }
 });
 
 document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Demosthenes" button.
-  console.log('This speech was written by ' + speechesArray[2].author + ' in ' + speechesArray[2].year);
+    ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[2].author + ' in ' + speechesArray[2].year +".<br>";
 
   if(speechesArray[2].yearIsBCE === true){
-    console.log('This speech took place before the common era.');
+    ConsoleDisplay.innerHTML += 'This speech took place before the common era. <br>';
   }else{
-    console.log('This speech took place during the common era.');
+    ConsoleDisplay.innerHTML += 'This speech took place during the common era.<br>';
   }
 
   var oldest = speechesArray[0].year,
@@ -119,9 +119,9 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   }
 
   if(speechesArray[2].year === oldest){
-    console.log('This is the oldest speech on the page.');
+    ConsoleDisplay.innerHTML += 'This is the oldest speech on the page. <br>';
   }
   if(speechesArray[2].year === newest){
-    console.log('This is the most recent speech on the page.');
+    ConsoleDisplay.innerHTML += 'This is the most recent speech on the page. <br>';
   }
 });
