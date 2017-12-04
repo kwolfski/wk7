@@ -20,13 +20,31 @@ var churchillSpeech = {
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
     donatePrompt;
 
+
+
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
-    donatePrompt = window.prompt('How much would you like to doante?');
+var donationDisplay = document.createElement('h3'),
+    donationText,
+    articleElements;
+    
+    
+donatePrompt = window.prompt('How much would you like to donate?');
+    
+    //Check the value the user enters with a conditional. If it is less than 100, we’re going to display a message with the value in the side nav. If the value is greater than or equal to 100, we’re going to show a different message and change some styles on the page.
+    
+        if(donatePrompt >= 100) {
+        donationText = document.createTextNode('Thank you for youe very generous donation!');
+        }
+        else{
+        donationText = document.createTextNode('Thank you for your donation of $' + donatePrompt );
+        }
+
+
 });
 
 
-    //Step 1
+    //Step 1 
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
