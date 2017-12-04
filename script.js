@@ -29,14 +29,14 @@ document.getElementById('BtnDonate').addEventListener('click', function(){
 
 document.getElementById('BtnChurchill').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Churchill" button.
-    ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year +".<br>";
+    document.getElementById('ConsoleDisplay').innerHTML = 'This speech was written by ' + speechesArray[0].author + ' in ' + speechesArray[0].year +".<br>";
     
     //Step2
 
   if(speechesArray[0].yearIsBCE === true){
-    ConsoleDisplay.innerHTML += 'This speech took place before the common era. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This speech took place before the common era. <br>';
   }else{
-    ConsoleDisplay.innerHTML += 'This speech took place during the common era.<br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This speech took place during the common era.<br>';
   }
 
     
@@ -57,10 +57,10 @@ document.getElementById('BtnChurchill').addEventListener('click', function(){
     //Step 3 - cannot get to fire... 
 
   if(speechesArray[0].year === oldest){
-    ConsoleDisplay.innerHTML += 'This is the oldest speech on the page. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This is the oldest speech on the page. <br>';
   }
   if(speechesArray[0].year === newest){
-    ConsoleDisplay.innerHTML += 'This is the most recent speech on the page. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This is the most recent speech on the page. <br>';
   }
 });
 
@@ -71,9 +71,9 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
     ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[1].author + ' in ' + speechesArray[1].year +".<br>";
 
   if(speechesArray[1].yearIsBCE === true){
-    ConsoleDisplay.innerHTML += 'This speech took place before the common era. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This speech took place before the common era. <br>';
   }else{
-    ConsoleDisplay.innerHTML += 'This speech took place during the common era.<br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This speech took place during the common era.<br>';
   }
 
   var oldest = speechesArray[0].year,
@@ -89,10 +89,10 @@ document.getElementById('BtnGhandi').addEventListener('click', function(){
   }
 
   if(speechesArray[1].year === oldest){
-    ConsoleDisplay.innerHTML += 'This is the oldest speech on the page. <br>';
+     document.getElementById('ConsoleDisplay').innerHTML += 'This is the oldest speech on the page. <br>';
   }
   if(speechesArray[1].year === newest){
-    ConsoleDisplay.innerHTML += 'This is the most recent speech on the page. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This is the most recent speech on the page. <br>';
   }
 });
 
@@ -101,9 +101,9 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
     ConsoleDisplay.innerHTML = 'This speech was written by ' + speechesArray[2].author + ' in ' + speechesArray[2].year +".<br>";
 
   if(speechesArray[2].yearIsBCE === true){
-    ConsoleDisplay.innerHTML += 'This speech took place before the common era. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This speech took place before the common era. <br>';
   }else{
-    ConsoleDisplay.innerHTML += 'This speech took place during the common era.<br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This speech took place during the common era.<br>';
   }
 
   var oldest = speechesArray[0].year,
@@ -119,9 +119,9 @@ document.getElementById('BtnDemosthenes').addEventListener('click', function(){
   }
 
   if(speechesArray[2].year === oldest){
-    ConsoleDisplay.innerHTML += 'This is the oldest speech on the page. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This is the oldest speech on the page. <br>';
   }
   if(speechesArray[2].year === newest){
-    ConsoleDisplay.innerHTML += 'This is the most recent speech on the page. <br>';
+    document.getElementById('ConsoleDisplay').innerHTML += 'This is the most recent speech on the page. <br>';
   }
 });
