@@ -22,6 +22,7 @@ var churchillSpeech = {
 
 document.getElementById('BtnDonate').addEventListener('click', function(){
   //Code in here executes when the user clicks the "Donate" button.
+    donatePrompt = window.prompt('How much would you like to doante?');
 });
 
 
