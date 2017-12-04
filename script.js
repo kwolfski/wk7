@@ -36,6 +36,10 @@ donatePrompt = window.prompt('How much would you like to donate?');
         if(donatePrompt >= 100) {
         donationText = document.createTextNode('Thank you for your very generous donation!');
         donationDisplay.setAttribute('style', 'color: #DB152C');
+            
+        articleElements = document.getElementsByTagName('article');
+        console.log(articleElements.length);
+            
         }
         else{
         donationText = document.createTextNode('Thank you for your donation of $' + donatePrompt );
